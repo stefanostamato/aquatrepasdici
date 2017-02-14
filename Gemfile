@@ -10,6 +10,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'devise', '~> 4.2'
 gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin'
 gem 'coffee-script-source', '1.8.0'
+gem 'active_skin'
 
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
