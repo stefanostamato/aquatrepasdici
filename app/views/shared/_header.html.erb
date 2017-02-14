@@ -1,0 +1,30 @@
+  <script>
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > $('header').height()) {
+          $(".nav").addClass('navscrolled');
+        }else {
+          $(".nav").removeClass('navscrolled');
+        }
+
+      });
+    });
+  </script>
+  <header>
+    <img src="/assets/logo.png">
+  </header>
+  <body>
+    <div class="nav">
+      <div class="wrapperwide">
+        <ul>
+          <li class="logo"><a href="index.html">À Quatre Pas D'ici</a></li>
+          <li>
+            <ul>
+              <li><a href="index.html">postagens recentes</a></li>
+              <li><a href="sobre.html">sobre</a></li>
+              <li><a href="contato.html">contato</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>

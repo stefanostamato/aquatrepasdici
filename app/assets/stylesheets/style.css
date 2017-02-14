@@ -1,0 +1,386 @@
+*{
+  margin: 0;
+}
+
+a[href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website_aquatrepasdici&utm_content=footer_img"]{
+  display: none;
+}
+
+h1 a{
+  text-decoration: none;
+}
+
+body{
+  background-image: url('/assets/noise.png');
+  background-repeat: repeat;
+}
+
+.postfooter{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.post ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+.post ul li{
+  display: flex;
+  justify-content: center;
+}
+
+.post ul li ul li{
+  display: inline;
+  margin-right: 1rem;
+}
+
+.post ul li img{
+  width: 3rem;
+  transition: all ease-in-out 300ms;
+  background: transparent;
+}
+
+.post ul li img:hover{
+  cursor: pointer;
+  transform:
+  translateY(-.3rem);
+}
+
+.formcontato{
+  margin: 1rem;
+}
+
+.formcontato ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.formcontato li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: .5rem;
+}
+
+.formcontato input, .formcontato textarea{
+  width: 100%;
+  outline: none;
+  background: #f4f4f4;
+  border: 0;
+  border-bottom: solid .1rem #ccc;
+  font-family: montserrat;
+  padding: .5rem;
+  padding-top: 1rem;
+  color: #aaa;
+}
+
+.formcontato textarea{
+  height: 10rem;
+  resize: none;
+}
+
+button{
+  font-family: montserrat;
+  background: transparent;
+}
+
+.formcontato input[type="submit"], button{
+  width: auto;
+  border: #484752 solid .15rem;
+  padding: 1rem;
+  color: #484752;
+  margin-top: 1rem;
+  transition: all ease-in-out 300ms;
+}
+
+.formcontato input[type="submit"]:hover, button:hover{
+  cursor: pointer;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(-.3rem);
+}
+
+footer{
+  margin-top: 3.25rem;
+  background: #484752;
+}
+
+footer .wrapperwide{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-family: montserrat;
+  font-size: .7rem;
+  padding: 1rem 0;
+  color: #f4f4f4;
+}
+
+.wrapperwide{
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.profilepic{
+  border-radius: 999rem;
+  height: 15rem;
+  width: 15rem;
+  background-image: url('/assets/escritora.jpg');
+  background-position: center;
+  background-size: cover;
+  margin: 1rem 3rem;
+  float: left;
+}
+
+.sobreescritora p{
+  float: right;
+  text-align: justify;
+}
+
+.sobreescritora{
+  width: 50%;
+  float: left;
+  margin: 3rem 1rem;
+}
+
+.profile ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile{
+  margin: 3rem 1rem;
+  float: right;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post a{
+  font-size: .9rem;
+  color: #484752;
+  transition: all ease-in-out 300ms;
+}
+
+.post a:hover{
+  color: #6096BA;
+}
+
+.conteudo h1{
+  font-size: 1.3rem;
+}
+
+.conteudo h2{
+  font-size: .8rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.post p{
+  font-size: .9rem;
+  color: #777;
+  text-align: justify;
+}
+
+.noborder{
+  border-right: 0!important;
+}
+
+.post{
+  margin: 1rem;
+  margin-bottom: 4rem;
+  border-right: .15rem solid #484752;
+  padding-right: .5rem;
+}
+
+.postimage{
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.postimage img{
+  width: 100%;
+}
+
+.post:last-of-type{
+  margin-bottom: 1rem;
+}
+
+.conteudo{
+  background-color: #f4f4f4;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 6.5rem;
+  overflow:auto;
+  font-family: montserrat;
+  color: #484752;
+}
+
+.archive{
+  width: 20vw;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.archive ul{
+  list-style: none;
+  padding: 0;
+  margin: 1rem;
+}
+
+.archive ul li{
+  text-align: right;
+}
+
+.posts{
+  width: 40vw;
+  float: left;
+}
+
+.navscrolled{
+  position: fixed !important;
+  top: 0 !important;
+}
+
+.nav{
+  z-index: 10;
+  background-color: #f4f4f4;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 20rem;
+  width: 100%;
+}
+
+.nav ul{
+  margin: 0 1rem;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav ul li{
+  font-family: 'Damion', cursive;
+  font-size: 1.3rem;
+  padding: .5rem 0;
+  display: inline-block;
+}
+
+.nav ul li ul li{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.nav a{
+  color: #484752;
+  text-decoration: none;
+  transition: all ease-in-out 300ms;
+}
+
+.nav a:hover{
+  color: #6096BA;
+}
+
+header{
+  background-image: url('/assets/fundo.png');
+  background-position: center;
+  background-size: cover;
+  min-height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header img{
+  width: 20rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapperwide{
+    width: 88vw;
+  }
+  .posts{
+    width: 70%;
+  }
+  .archive{
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .archive{
+    font-size: .8em;
+  }
+
+  .archive h1{
+    font-size: 1.2rem;
+  }
+
+  .archive h2{
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .logo{
+    display: none !important;
+  }
+
+  .nav ul{
+    justify-content: center;
+  }
+
+
+
+
+  .archive h2,.archive{
+    font-size: 1rem;
+  }
+
+
+  .archive ul li{
+    text-align: center;
+  }
+
+  .posts{
+    width: 100%;
+  }
+
+  .post{
+    border-right: 0;
+    text-align: justify;
+    padding-bottom: 1rem;
+    border-bottom: dashed .1rem #ccc;
+    margin-bottom: 1rem;
+  }
+
+  .archive{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sobreescritora, .profile{
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  .profilepic{
+    margin-top: 3rem;
+  }
+
+  .sobreescritora p, .sobreescritora h1{
+    margin: 0 1rem;
+    float: none;
+  }
+}
