@@ -165,9 +165,13 @@ footer .wrapperwide{
 }
 
 .post a{
-  font-size: .9rem;
+  /*font-size: .9rem;*/
   color: #484752;
   transition: all ease-in-out 300ms;
+}
+
+a.sharelink{
+  text-decoration: none !important;
 }
 
 .post a:hover{

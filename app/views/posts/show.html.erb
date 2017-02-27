@@ -1,0 +1,42 @@
+<div class="wrapperwide">
+  <div class="conteudo">
+    <div class="post noborder">
+      <h1><%= @post.title %></h1>
+      <h2><%= @post.date.strftime("%m/%d/%Y") %></h2>
+      <p>
+        <%= @post.body %>
+      </p>
+      <div class="postimage"><%= image_tag @post.image %></div>
+      <div class="postfooter">
+        <ul>
+          <li>
+            <ul>
+              <script language="javascript" type="text/javascript">
+                var scrt_var = 'google.com';
+              </script>
+              <li>
+                <a href="http://www.facebook.com/sharer.php" target="_blank" onclick="location.href=this.href+'?u='+scrt_var;return false;" class="sharelink">
+                  <img src="/assets/facebook.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="http://www.twitter.com/share" target="_blank" onclick="location.href=this.href+'?url='+scrt_var;return false;" class="sharelink">
+                  <img src="/assets/twitter.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/share" target="_blank" onclick="location.href=this.href+'?url='+scrt_var;return false;" class="sharelink">
+                  <img src="/assets/google-plus.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=http://www.foodiecrush.com/2014/03/filet-mignon-with-porcini-mushroom-compound-butter/&media=https://s-media-cache-ak0.pinimg.com/736x/17/34/8e/17348e163a3212c06e61c41c4b22b87a.jpg&description=So%20delicious!" data-pin-custom="true" class="sharelink"><img src="/assets/pinterest.png"></a>
+              </li>
+            </ul>
+          </li>
+          <li><%= link_to '<button>postagens recentes</button>'.html_safe, root_path %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

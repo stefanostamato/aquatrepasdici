@@ -3,21 +3,16 @@
     <div class="wrapperwide">
       <div class="conteudo">
         <div class="posts">
-          <div class="post">
-            <h1><a href="post.html">Titulo da Postagem</a></h1>
-            <h2>20/01/2017</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p> <a href="post.html">ver mais</a>
-          </div>
 
-          <div class="post">
-            <h1><a href="post.html">Titulo da Postagem</a></h1>
-            <h2>20/01/2017</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p> <a href="post.html">ver mais</a>
-          </div>
+          <% @posts.each do |post| %>
+            <div class="post">
+              <h1><%= link_to post_path(post) do %><%= post.title %><% end %></h1>
+              <h2><%= post.date.strftime("%m/%d/%Y") %></h2>
+              <p>
+                <%= post.body.match(/^.{0,666}\b/)[0] %>
+              </p> <%= link_to post_path(post) do %>ver mais<% end %>
+            </div>
+          <% end %>
 
         </div>
         <div class="archive">
