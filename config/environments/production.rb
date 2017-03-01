@@ -10,6 +10,17 @@ Rails.application.configure do
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
 
+  # config/environments/production.rb
+config.paperclip_defaults = {
+    storage: :s3,
+    s3_credentials: {
+      bucket: ENV.fetch('aquatrepasdici'),
+      access_key_id: ENV.fetch('Stefano'),
+      secret_access_key: ENV.fetch('treko123'),
+      s3_region: ENV.fetch('sa-east-1'),
+    }
+  }
+
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
