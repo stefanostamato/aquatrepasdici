@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   resources :posts
   root 'posts#index'
 
+  match '/sobre' => 'pages#sobre'
+  match '/contato' => 'pages#contato'
+
 end
