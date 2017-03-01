@@ -11,21 +11,37 @@
         <ul>
           <li>
             <ul>
-              <script language="javascript" type="text/javascript">
-                var scrt_var = window.location.href;
-              </script>
+              <script>
+                function fbShare(url, title, descr, image, winWidth, winHeight) {
+                    var winTop = (screen.height / 2) - (winHeight / 2);
+                    var winLeft = (screen.width / 2) - (winWidth / 2);
+                    window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
+                }
+            </script>
+            <script type="text/javascript">
+              function fbs_click() {
+                  var twtTitle = document.title;
+                  var twtUrl = location.href;
+                  var maxLength = 140 - (twtUrl.length + 1);
+                  if (twtTitle.length > maxLength) {
+                      twtTitle = twtTitle.substr(0, (maxLength - 3)) + '...';
+                  }
+                  var twtLink = 'http://twitter.com/home?status=' + encodeURIComponent(twtTitle + ' ' + twtUrl);
+                  window.open(twtLink);
+              }
+            </script>
               <li>
-                <a href="http://www.facebook.com/sharer.php" target="_blank" onclick="location.href=this.href+'?u='+scrt_var;return false;" class="sharelink">
+                <a href="javascript:fbShare('http://jsfiddle.net/stichoza/EYxTJ/', 'Fb Share', 'Facebook share popup', 'http://goo.gl/dS52U', 520, 350)" class="sharelink">
                   <img src="/assets/facebook.png" alt="">
                 </a>
               </li>
               <li>
-                <a href="http://www.twitter.com/share" target="_blank" onclick="location.href=this.href+'?url='+scrt_var;return false;" class="sharelink">
+                <a href="#" onclick="fbs_click();" class="sharelink" >
                   <img src="/assets/twitter.png" alt="">
                 </a>
               </li>
               <li>
-                <a href="https://plus.google.com/share" target="_blank" onclick="location.href=this.href+'?url='+scrt_var;return false;" class="sharelink">
+                <a href="https://plus.google.com/share" onclick="window.open(this.href+'?url='+window.location.href);return false;" class="sharelink">
                   <img src="/assets/google-plus.png" alt="">
                 </a>
               </li>
@@ -36,7 +52,7 @@
           </li>
           <li><%= link_to '<button>postagens recentes</button>'.html_safe, root_path %></li>
         </ul>
-      </div>
+      </div> 
     </div>
   </div>
 </div>
