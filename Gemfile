@@ -11,7 +11,7 @@ gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin'
 gem 'coffee-script-source', '1.8.0'
 gem 'active_skin'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
-gem 'aws-sdk', '< 2.0'
+gem 'aws-sdk', '~> 2.3'
 
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
