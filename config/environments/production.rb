@@ -15,8 +15,8 @@ config.paperclip_defaults = {
     storage: :s3,
     s3_credentials: {
       bucket: ENV.fetch('aquatrepasdici'),
-      access_key_id: ENV.fetch('Stefano'),
-      secret_access_key: ENV.fetch('treko123'),
+      access_key_id: ENV.fetch('AKIAI65DBELK74KKC7KQ'),
+      secret_access_key: ENV.fetch('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'),
       s3_region: ENV.fetch('sa-east-1'),
     }
   }
