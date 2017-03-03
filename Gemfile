@@ -11,6 +11,7 @@ gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin'
 gem 'coffee-script-source', '1.8.0'
 gem 'active_skin'
 gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
+
 gem 'aws-sdk', '~> 2.3'
 
 gem 'jquery-rails'
