@@ -8,7 +8,7 @@
           <% @posts.each do |post| %>
             <div class="post">
               <h1><%= link_to post_path(post) do %><%= post.title %><% end %></h1>
-              <h2><%= post.date.strftime("%m/%d/%Y") %></h2>
+              <h2><%= post.date.strftime('%d/%m/%Y') %></h2>
               <p>
                 <%= post.body.match(/^.{0,666}\b/)[0] %>
               </p> <%= link_to post_path(post) do %>ver mais<% end %>
