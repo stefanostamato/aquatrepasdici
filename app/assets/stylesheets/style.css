@@ -340,12 +340,17 @@ header img{
     display: none !important;
   }
 
+  .nav ul li:first-of-type{
+    margin-left: none;
+  }
+
   .nav ul{
     justify-content: center;
   }
 
-
-
+  .conteudo{
+    padding-top: 1rem !important;
+  }
 
   .archive h2,.archive{
     font-size: 1rem;
