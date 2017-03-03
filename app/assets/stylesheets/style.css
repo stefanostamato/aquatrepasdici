@@ -341,7 +341,7 @@ header img{
   }
 
   .nav ul li:first-of-type{
-    margin-left: none;
+    margin-left: 0;
   }
 
   .nav ul{
