@@ -1,0 +1,16 @@
+<head><title>Contato</title></head>
+<div class="wrapperwide">
+  <div class="conteudo">
+    <div class="formcontato">
+      <%= form_for @contact do |f| %>
+        <ul>
+          <li><h1>Entre em contato conosco:</h1></li>
+          <li><%= f.text_field :name, required: true, placeholder: "Nome" %></li>
+          <li><%= f.text_field :email, required: true, placeholder: "Email" %></li>
+          <li><%= f.text_area :message, required: true, placeholder: "Mensagem", as: :text %></li>
+          <li><%= f.submit "Enviar Mensagem" %></li>
+        </ul>
+      <% end %>
+    </div>
+  </div>
+</div>

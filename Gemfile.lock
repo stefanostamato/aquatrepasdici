@@ -1,15 +1,4 @@
 GIT
-  remote: git://github.com/thoughtbot/paperclip.git
-  revision: 7c81e7813e75950d111885b44d33c08358e5e46c
-  specs:
-    paperclip (5.1.0)
-      activemodel (>= 4.2.0)
-      activesupport (>= 4.2.0)
-      cocaine (~> 0.5.5)
-      mime-types
-      mimemagic (~> 0.3.0)
-
-GIT
   remote: https://github.com/activeadmin/activeadmin
   revision: 66b74fb9c08f5d6d11b0bf18dab33727f71e8ab1
   specs:
@@ -28,8 +17,20 @@ GIT
       sass-rails
       sprockets (< 4.1)
 
+GIT
+  remote: https://github.com/thoughtbot/paperclip
+  revision: 523bd46c768226893f23889079a7aa9c73b57d68
+  ref: 523bd46c768226893f23889079a7aa9c73b57d68
+  specs:
+    paperclip (4.3.1)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (= 0.3.0)
+
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     actioncable (5.0.1)
       actionpack (= 5.0.1)
@@ -105,6 +106,8 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.7.0)
+    figaro (1.1.1)
+      thor (~> 0.14)
     formtastic (3.1.4)
       actionpack (>= 3.2.13)
     formtastic_i18n (0.6.0)
@@ -145,11 +148,14 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
+    mail_form (1.6.0)
+      actionmailer (>= 3.2, < 5.1)
+      activemodel (>= 3.2, < 5.1)
     method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mimemagic (0.3.2)
+    mimemagic (0.3.0)
     mini_portile2 (2.1.0)
     minitest (5.10.1)
     multi_json (1.12.1)
@@ -250,8 +256,10 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   coffee-script-source (= 1.8.0)
   devise (~> 4.2)
+  figaro
   jbuilder (~> 2.5)
   jquery-rails
+  mail_form (~> 1.5, >= 1.5.1)
   paperclip!
   pg
   puma (~> 3.0)

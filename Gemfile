@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'puma', '~> 3.0'
@@ -10,8 +10,8 @@ gem 'devise', '~> 4.2'
 gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin'
 gem 'coffee-script-source', '1.8.0'
 gem 'active_skin'
-# gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
-gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
+gem 'figaro'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 gem 'aws-sdk', '~> 2.3'
